@@ -24,9 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/pa26/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
     vendor/sharp/pa26/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/sharp/pa26/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-    vendor/sharp/pa26/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
-
-PRODUCT_COPY_FILES += \
+    vendor/sharp/pa26/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/sharp/pa26/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/sharp/pa26/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/sharp/pa26/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
@@ -41,16 +39,9 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/pa26/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/sharp/pa26/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/sharp/pa26/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/sharp/pa26/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    vendor/sharp/pa26/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/sharp/pa26/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/sharp/pa26/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    vendor/sharp/pa26/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    vendor/sharp/pa26/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/sharp/pa26/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    vendor/sharp/pa26/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/sharp/pa26/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
-    vendor/sharp/pa26/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/sharp/pa26/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/sharp/pa26/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/sharp/pa26/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
@@ -115,19 +106,25 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/pa26/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/sharp/pa26/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/sharp/pa26/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
+    vendor/sharp/pa26/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/sharp/pa26/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/sharp/pa26/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/sharp/pa26/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/sharp/pa26/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/sharp/pa26/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/sharp/pa26/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
@@ -137,8 +134,6 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/pa26/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/sharp/pa26/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
-    vendor/sharp/pa26/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/sharp/pa26/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
@@ -151,10 +146,88 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/pa26/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/sharp/pa26/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/sharp/pa26/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/sharp/pa26/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+    vendor/sharp/pa26/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so
+#Cameara
+PRODUCT_COPY_FILES += \
+    vendor/sharp/pa26/proprietary/lib/hw/camera.msm8974.so:system/lib/hw/camera.msm8974.so \
+    vendor/sharp/pa26/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/sharp/pa26/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
+    vendor/sharp/pa26/proprietary/lib/libarcsoft_nightportrait.so:system/lib/libarcsoft_nightportrait.so \
+    vendor/sharp/pa26/proprietary/lib/libarcsoft_smart_denoise.so:system/lib/libarcsoft_smart_denoise.so \
+    vendor/sharp/pa26/proprietary/lib/libarcsoft_picauto_autoframing.so:system/lib/libarcsoft_picauto_autoframing.so \
+    vendor/sharp/pa26/proprietary/lib/libc2dcolorconvert.so:system/lib/libc2dcolorconvert.so \
+    vendor/sharp/pa26/proprietary/lib/libchromatix_imx132_hfr_120.so:system/lib/libchromatix_imx132_hfr_120.so \
+    vendor/sharp/pa26/proprietary/lib/libchromatix_imx214_liveshot.so:system/lib/libchromatix_imx214_liveshot.so \
+    vendor/sharp/pa26/proprietary/lib/libchromatix_imx214_video_hd.so:system/lib/libchromatix_imx214_video_hd.so \
+    vendor/sharp/pa26/proprietary/lib/libchromatix_imx214_video_hdr.so:system/lib/libchromatix_imx214_video_hdr.so \
+    vendor/sharp/pa26/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
+    vendor/sharp/pa26/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/sharp/pa26/proprietary/lib/libmmcamera2_stats_algorithm.so:system/lib/libmmcamera2_stats_algorithm.so \
+    vendor/sharp/pa26/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+    vendor/sharp/pa26/proprietary/lib/libmmcamera_s5k4h5yb.so:system/lib/libmmcamera_s5k4h5yb.so \
+    vendor/sharp/pa26/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/sharp/pa26/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/sharp/pa26/proprietary/lib/libshcamled.so:system/lib/libshcamled.so \
+    vendor/sharp/pa26/proprietary/lib/libshcommon_camera.so:system/lib/libshcommon_camera.so \
+    vendor/sharp/pa26/proprietary/lib/libshmmcamera.so:system/lib/libshmmcamera.so \
+    vendor/sharp/pa26/proprietary/lib/libsh_imagequalityadjust.so:system/lib/libsh_imagequalityadjust.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx132_common.so:system/vendor/lib/libchromatix_imx132_common.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx132_default_video.so:system/vendor/lib/libchromatix_imx132_default_video.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:system/vendor/lib/libchromatix_imx132_liveshot.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx132_preview.so:system/vendor/lib/libchromatix_imx132_preview.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:system/vendor/lib/libchromatix_imx132_snapshot.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_imx214_common_hd.so:system/vendor/lib/libchromatix_imx214_common_hd.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_s5k4h5yb_common.so:system/vendor/lib/libchromatix_s5k4h5yb_common.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_s5k4h5yb_default_video.so:system/vendor/lib/libchromatix_s5k4h5yb_default_video.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_s5k4h5yb_liveshot.so:system/vendor/lib/libchromatix_s5k4h5yb_liveshot.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_s5k4h5yb_preview.so:system/vendor/lib/libchromatix_s5k4h5yb_preview.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libchromatix_s5k4h5yb_snapshot.so:system/vendor/lib/libchromatix_s5k4h5yb_snapshot.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_s5k8aayx.so:system/vendor/lib/libmmcamera_s5k8aayx.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libactuator_ak7345_camera.so:system/vendor/lib/libactuator_ak7345_camera.so \
+    vendor/sharp/pa26/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:system/vendor/lib/libactuator_ak7345_camcorder.so
 
 PRODUCT_PACKAGES += \
     libwpa_qmi_eap_proxy \
     TimeService \
-    shutdownlistener \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    shutdownlistener
